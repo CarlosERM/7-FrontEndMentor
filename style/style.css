@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+* {
+    box-sizing:border-box;
+}
+html, body {
+    width:100%;
+}
+body {
+    background-color:hsl(233, 47%, 7%);
+    padding:4.6em 1.25em;
+}
+main {
+    border-radius:7px;
+    background-color:hsl(244, 38%, 16%);
+}
+#back-image {
+    border-radius:7px 7px 0px 0px;
+    background:url('../images/image-header-mobile.jpg')no-repeat;
+    background-size:cover;
+    opacity:0.5;
+    padding:36.7%;
+}
+#purple-back {
+    background: hsl(278, 81%, 31%);
+    border-radius:7px 7px 0px 0px;
+
+}
+
+#info {
+    text-align:center;
+    padding:1.5em;
+    padding-bottom:.5em;
+
+}
+#info h1 {
+    margin-top: 0.45em;
+    font-size:1.46em;
+    font-family: 'Inter', sans-serif;
+    color:  hsl(0, 0%, 100%);
+    font-weight:700;
+}
+#info h1 span {
+    color:hsl(277, 64%, 61%);
+}
+#info p {
+    font-family: 'Inter', sans-serif;
+    font-weight:400;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size:0.8em;
+    line-height:1.7em;
+    margin-top:1rem;
+}
+
+#info ul {
+    list-style:none;
+    padding:0;
+    margin:0;
+    margin-top:2rem;
+    font-family: 'Inter', sans-serif;
+
+}
+#info ul li {
+    color:hsl(0, 0%, 100%);
+    margin-bottom:1.5em;
+}
+#info ul li h2 {
+
+    margin:0;
+    font-size:1.2em;
+}
+#info ul li p {
+    color:hsla(0, 0%, 100%, 0.6);
+    text-transform:uppercase;
+    margin-top:0.4em;
+    margin-bottom:0;
+    font-size:0.65rem;
+    font-weight:400;
+}
+@media all and (min-width:768px) {
+    body {
+        font-size:30px;
+    }
+}
+@media all and (min-width:1024px)  {
+    body, html {
+        height:100%;
+        padding:0;
+    }
+    main {
+        
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:0.5fr;
+        grid-template-areas:"info imagem";
+        font-size:70%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    }
+
+   
+    #info {
+        text-align:left;
+        grid-area:info;
+    }
+    #ack-image {
+        border-radius:0 7px 7px 0;
+
+    }
+    #purple-back {
+        grid-area:imagem;
+    }
+    
+    #info ul {
+        display:flex;
+        justify-content:space-between;
+    }
+}
