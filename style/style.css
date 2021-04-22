@@ -10,7 +10,7 @@ html, body {
 }
 body {
     background-color:hsl(233, 47%, 7%);
-    padding:4.6em 1.25em;
+    padding:5.5em 1.5em;
 }
 main {
     border-radius:7px;
@@ -20,24 +20,28 @@ main {
     border-radius:7px 7px 0px 0px;
     background:url('../images/image-header-mobile.jpg')no-repeat;
     background-size:cover;
-    opacity:0.5;
-    padding:36.7%;
+    /*padding:36.7%; isso aqui me deu dor de cabeça*/
+    height:15em;
+    /*height:47vh;*/
+
 }
 #purple-back {
     background: hsl(278, 81%, 31%);
     border-radius:7px 7px 0px 0px;
+    opacity:0.5;
+    height:100%;
 
 }
 
 #info {
     text-align:center;
-    padding:1.5em;
-    padding-bottom:.5em;
-
+    padding:1.7em;
+    padding-bottom:.7em;
 }
 #info h1 {
     margin-top: 0.45em;
-    font-size:1.46em;
+    margin-bottom:0;
+    font-size:1.75em;
     font-family: 'Inter', sans-serif;
     color:  hsl(0, 0%, 100%);
     font-weight:700;
@@ -49,7 +53,7 @@ main {
     font-family: 'Inter', sans-serif;
     font-weight:400;
     color: hsla(0, 0%, 100%, 0.6);
-    font-size:0.8em;
+    font-size:.95em;
     line-height:1.7em;
     margin-top:1rem;
 }
@@ -58,26 +62,27 @@ main {
     list-style:none;
     padding:0;
     margin:0;
-    margin-top:2rem;
+    margin-top:2.5rem;
     font-family: 'Inter', sans-serif;
 
 }
 #info ul li {
     color:hsl(0, 0%, 100%);
-    margin-bottom:1.5em;
+    margin-bottom:1.6em;
 }
 #info ul li h2 {
 
     margin:0;
-    font-size:1.2em;
+    font-size:1.5em;
 }
 #info ul li p {
     color:hsla(0, 0%, 100%, 0.6);
     text-transform:uppercase;
-    margin-top:0.4em;
+    margin-top:0.45em;
     margin-bottom:0;
-    font-size:0.65rem;
+    font-size:.75rem;
     font-weight:400;
+    letter-spacing: 0.1em;
 }
 @media all and (min-width:768px) {
     body {
@@ -89,13 +94,16 @@ main {
         height:100%;
         padding:0;
     }
+ 
     main {
-        
         display:grid;
-        grid-template-columns:1fr 1fr;
-        grid-template-rows:0.5fr;
+        grid-template-columns:1fr 0.95fr;
+        grid-template-rows:1fr;;
         grid-template-areas:"info imagem";
         font-size:70%;
+        /*ESTUDAR POSICIONAMENTO E CENTRALIZAÇÃO*/
+        width:77%;
+        height:auto;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -107,17 +115,113 @@ main {
     #info {
         text-align:left;
         grid-area:info;
+        padding:1.5em 0;
+        padding-left:3.4em;
+
+        width:85%;
+
+    }
+    #info h1 {
+        margin-top:1em;
+        font-size:2.25rem;
+        line-height:2.7rem;
+    }
+    #info p {
+        margin-top:2em;
+        font-size:0.95rem;
+        width:85%;
     }
     #ack-image {
         border-radius:0 7px 7px 0;
 
     }
-    #purple-back {
+    #back-image {
         grid-area:imagem;
+        background:url('../images/image-header-desktop.jpg') no-repeat;
+        background-size:cover;
+        height:100%;
+        width:auto;
+        border-radius: 0px 7px 7px 0px;
+    }
+    #purple-back {
+        border-radius: 0px 7px 7px 0px;
+
     }
     
     #info ul {
+        width:85%;
+        margin-top:5rem;
+        font-size:1rem;
         display:flex;
         justify-content:space-between;
+    }
+    #info ul li p {
+        font-size:0.6em;
+    }
+}
+@media all and (width:1100px) {
+    body, html {
+        height:100%;
+        padding:0;
+    }
+ 
+    main {
+        display:grid;
+        grid-template-columns:1fr 0.95fr;
+        grid-template-rows:1fr;;
+        grid-template-areas:"info imagem";
+        font-size:70%;
+        /*ESTUDAR POSICIONAMENTO E CENTRALIZAÇÃO*/
+        width:77%;
+        height:auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    }
+
+   
+    #info {
+        text-align:left;
+        grid-area:info;
+        padding:1.5em 0;
+        padding-left:3.4em;
+
+        width:85%;
+
+    }
+    #info h1 {
+        margin-top:1em;
+        font-size:2.25rem;
+        line-height:2.7rem;
+    }
+    #info p {
+        margin-top:2em;
+        font-size:0.95rem;
+        width:85%;
+    }
+    #ack-image {
+        border-radius:0 7px 7px 0;
+
+    }
+    #back-image {
+        grid-area:imagem;
+        background:url('../images/image-header-desktop.jpg') no-repeat;
+        background-size:cover;
+        height:100%;
+        width:auto;
+    }
+    
+    #info ul {
+        width:85%;
+        margin-top:5rem;
+        font-size:1rem;
+        display:flex;
+        justify-content:space-between;
+    }
+    #info ul li  {
+        font-size:.75rem;
+
     }
 }
