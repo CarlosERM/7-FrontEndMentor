@@ -6,15 +6,14 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 ![mobile](https://user-images.githubusercontent.com/74724103/115761718-07abc500-a379-11eb-80de-47010058352e.png)
 ### Links
 
-- Solution URL: [https://github.com/CarlosERM/7-FrontEndMentor.git](https://github.com/CarlosERM/7-FrontEndMentor.git)
-- Live Site URL: [https://carloserm.github.io/7-FrontEndMentor/](https://carloserm.github.io/7-FrontEndMentor/)
+- Solution URL: [https://github.com/CarlosERM/Stats-Preview.git](https://github.com/CarlosERM/Stats-Preview.git)
+- Live Site URL: [https://carloserm.github.io/Stats-Preview/](https://carloserm.github.io/Stats-Preview/)
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
-- CSS Grid
 - Mobile-first workflow
+- 
 ## Author
 
 - Website - [Carlos Eduardo Rocha Miranda](https://www.your-site.com)
